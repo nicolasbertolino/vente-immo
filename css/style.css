@@ -1388,6 +1388,11 @@ header > div .hamburger.isOpened span:nth-child(3) {
   fill: var(--color-primary);
 }
 
+.page section.description > div > div:nth-child(1) > div:first-child .left > div .views {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
 .page section.description > div > div:nth-child(1) > div:first-child .left > div .views svg {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
