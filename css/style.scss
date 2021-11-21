@@ -1096,13 +1096,14 @@ header {
           gap: 0.8rem;
           margin-top: 0.8rem;
           font-size: 0.875rem;
-          cursor: pointer;
+          &:not(:first-child) {
+            cursor: pointer;
+          }
           &:first-child {
             font-size: large;
             font-weight: bold;
             margin-top: 0;
             margin-bottom: 1rem;
-            cursor: text;
           }
           svg {
             fill: var(--color-text);
@@ -1247,13 +1248,14 @@ header {
               gap: 0.8rem;
               margin-top: 0.8rem;
               font-size: 0.875rem;
-              cursor: pointer;
+              &:not(:first-child) {
+                cursor: pointer;
+              }
               &:first-child {
                 font-size: large;
                 font-weight: bold;
                 margin-top: 0;
                 margin-bottom: 1rem;
-                cursor: text;
               }
               svg {
                 fill: var(--color-text);
@@ -1307,6 +1309,9 @@ header {
                 height: 100%;
                 object-fit: cover;
                 transition: 0.3s ease-out;
+                @media (min-width: 1280px) {
+                  aspect-ratio: 3 / 2;
+                }
                 @media (max-width: 767px) {
                   aspect-ratio: 2 / 1;
                 }
